@@ -25,4 +25,4 @@ To accomplish this target project has to have following in `csproj` file.
     </GenerateAll>
   </Target>
 ```
-<sub>Note: these targets will not be called if tests are run by NCrunch</sbu>
+<sub>Note: these targets will not be called if tests are run by NCrunch</sub>
