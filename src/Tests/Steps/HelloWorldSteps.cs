@@ -23,10 +23,10 @@ namespace Tests.Steps
             _helloWorldService.SayHello();
         }
 
-        [Then(@"the Hello world should be printed on the screen")]
-        public void ThenTheHelloWorldShouldBePrintedOnTheScreen()
+        [Then(@"the '(.*)' should be printed on the screen")]
+        public void ThenTheShouldBePrintedOnTheScreen(string expectedString)
         {
-            _outputWriterMoq.Verify(writer => writer.WriteLine("Hello World"));
+            _outputWriterMoq.Verify(writer => writer.WriteLine(expectedString));
         }
     }
 }

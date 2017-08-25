@@ -44,11 +44,11 @@ namespace AcceptanceTests.Steps
             _process.BeginOutputReadLine();
         }
 
-        [Then(@"the Hello world should be printed on the screen")]
-        public void ThenTheHelloWorldShouldBePrintedOnTheScreen()
+        [Then(@"the '(.*)' should be printed on the screen")]
+        public void ThenTheShouldBePrintedOnTheScreen(string expectedString)
         {
             var processOutput = _processOutputTaskCompletionSource.Task.Result;
-            Assert.Equal("Hello World", processOutput);
+            Assert.Equal(expectedString, processOutput);
         }
     }
 }

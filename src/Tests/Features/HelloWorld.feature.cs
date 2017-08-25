@@ -71,22 +71,20 @@ namespace Tests.Features
             this.ScenarioTearDown();
         }
         
-        [Xunit.FactAttribute(DisplayName="Print hellow world")]
+        [Xunit.FactAttribute(DisplayName="Print Hello World")]
         [Xunit.TraitAttribute("FeatureTitle", "HelloWorld")]
-        [Xunit.TraitAttribute("Description", "Print hellow world")]
-        [Xunit.TraitAttribute("Category", "mytag")]
-        public virtual void PrintHellowWorld()
+        [Xunit.TraitAttribute("Description", "Print Hello World")]
+        public virtual void PrintHelloWorld()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Print hellow world", new string[] {
-                        "mytag"});
-#line 7
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Print Hello World", ((string[])(null)));
+#line 6
 this.ScenarioSetup(scenarioInfo);
-#line 8
+#line 7
  testRunner.Given("the SharedFeature program", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 9
+#line 8
  testRunner.When("SharedFeature program is started", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 10
- testRunner.Then("the Hello world should be printed on the screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 9
+ testRunner.Then("the \'Hello World\' should be printed on the screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
